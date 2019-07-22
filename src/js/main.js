@@ -17,6 +17,26 @@ if ('serviceWorker' in navigator) {
 // place your code below
 
 
-console.log(`Hello world!`);
+const addGlass = document.querySelector('.add-glass');
+const removeGlass = document.querySelector('.remove-glass');
+const reset = document.querySelector('.reset');
+const glassCounter = document.querySelector('.glass__counter');
 
 
+addGlass.addEventListener('click', (e) => {
+  for (let i = glassCounter.textContent; i < 10; i) {
+    glassCounter.innerHTML = ++i;
+    break;
+  }
+});
+
+removeGlass.addEventListener('click', (e) => {
+  for (let i = glassCounter.textContent; i > 0; i) {
+    glassCounter.innerHTML = --i;
+    break;
+  }
+});
+
+reset.addEventListener('click', (e) => {
+  glassCounter.innerHTML = 0;
+})

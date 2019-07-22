@@ -31,9 +31,8 @@ body {
   margin: 101px 48px 48px;
   position: relative;
 }
-.glass__vessel {
-}
-.glass__number {
+
+.glass__counter {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -45,8 +44,9 @@ body {
   right: 38.4%;
   top: 39.04%;
   bottom: 48.89%;
+  display: flex;
+  justify-content: center;
 }
-
 
 // BUTTONS
 .add-glass {
@@ -80,5 +80,5 @@ body {
 }
 
 @media (max-width: 375px) {
-  width: 100%;
+  
 }
