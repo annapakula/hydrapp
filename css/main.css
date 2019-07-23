@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -316,7 +317,76 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  background: #3767AD;
+  position: relative; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.glass {
+  margin: 101px 48px 48px;
+  position: relative; }
+
+.glass__counter {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 112px;
+  line-height: 131px;
+  text-align: center;
+  position: absolute;
+  left: 38.13%;
+  right: 38.4%;
+  top: 39.04%;
+  bottom: 48.89%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.add-glass {
+  font-family: Roboto;
+  width: 216px;
+  height: 48px;
+  margin-bottom: 37px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px; }
+
+.remove-glass {
+  margin-bottom: 18px;
+  color: #F5E5E7;
+  background: none;
+  border: none;
+  width: 184px;
+  height: 23px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px; }
+
+.reset {
+  color: #F5E5E7;
+  background: none;
+  border: none;
+  width: 184px;
+  height: 23px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px; }
 
 /*# sourceMappingURL=main.css.map */
