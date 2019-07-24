@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=latin-ext');
 
 
-
 html {
   box-sizing: border-box;
 }
@@ -13,9 +12,14 @@ html {
 }
 
 body {
-  background: #3767AD;
-  position: relative;
-   
+  background: #3767AD; 
+  font-family: Roboto;
+  font-weight: 500;
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
@@ -23,19 +27,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
+
 }
 
 // GLASS
 .glass {
-  margin: 101px 48px 48px;
+  margin: 48px 48px;
   position: relative;
-}
-
-.glass__counter {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
+  &__vessel {
+  }
+  &__water {
+  }
+  &__counter {
   font-size: 112px;
   line-height: 131px;
   text-align: center;
@@ -46,18 +49,27 @@ body {
   bottom: 48.89%;
   display: flex;
   justify-content: center;
+  }
 }
 
 // BUTTONS
 .add-glass {
-  font-family: Roboto;
+  padding: 12px;
   width: 216px;
   height: 48px;
   margin-bottom: 37px;
-  font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform .5s ease-in-out;
+  will-change: transform;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 }
 @mixin buttonShape {
   color: #F5E5E7;
@@ -65,20 +77,15 @@ body {
   border: none;
   width: 184px;
   height: 23px;
-  font-family: Roboto;
-  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  
+  cursor: pointer;
 }
 .remove-glass {
   margin-bottom: 18px;
   @include buttonShape;
 }
 .reset {
+  margin-bottom: 37px;
   @include buttonShape;
-}
-
-@media (max-width: 375px) {
-  
 }
